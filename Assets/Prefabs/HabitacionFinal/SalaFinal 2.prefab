@@ -1024,7 +1024,7 @@ GameObject:
   - component: {fileID: 5769199871574096026}
   - component: {fileID: 6406412023120680388}
   m_Layer: 6
-  m_Name: SalaFinal
+  m_Name: SalaFinal 2
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1823,7 +1823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7028029139352902391, guid: 68811066ebb7ed14dbd3ad7dbd4c6294, type: 3}
       propertyPath: scene
-      value: Escena2
+      value: Escena1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
