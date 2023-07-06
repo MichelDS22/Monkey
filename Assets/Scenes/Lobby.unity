@@ -297,6 +297,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &252032000 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5884880033647386389, guid: b46b92bffdb1c164c8ca53eec7eade6c, type: 3}
+  m_PrefabInstance: {fileID: 819070833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &252032006
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252032000}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8a9aed9cdefa9ac42b11e940a83cd8e0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &299759776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -570,6 +595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mauricio
       objectReference: {fileID: 0}
+    - target: {fileID: 5884880033647386390, guid: b46b92bffdb1c164c8ca53eec7eade6c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1180704893, guid: b4925cd256da97c45880a7a88853574e, type: 3}
     - target: {fileID: 5884880033647386391, guid: b46b92bffdb1c164c8ca53eec7eade6c, type: 3}
       propertyPath: m_RootOrder
       value: 5
