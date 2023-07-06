@@ -1171,7 +1171,7 @@ MonoBehaviour:
   HabitacionMascara:
     serializedVersion: 2
     m_Bits: 64
-  EsperaIncial: 0
+  EsperaIncial: 0.25
 --- !u!4 &911830033
 Transform:
   m_ObjectHideFlags: 0
