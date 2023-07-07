@@ -1164,7 +1164,7 @@ MonoBehaviour:
   - {fileID: 4367579455471559760, guid: 4b6b65243c60af94a968e67950398ecb, type: 3}
   - {fileID: 4367579455471559760, guid: 58733fd49dbc00843a0c8d12422c26fe, type: 3}
   SalaInicial:
-  - {fileID: 4367579455471559760, guid: 6fa1407726addee408fea51ffd5c06d1, type: 3}
+  - {fileID: 4367579455471559760, guid: 42ab925115c2a9f41aa5c6e1cca47a2b, type: 3}
   - {fileID: 4367579455471559760, guid: 15608b06ba7323249be8fbcce80d8aee, type: 3}
   - {fileID: 4367579455471559760, guid: 795f0740db379ff4f945cf98cc5f4746, type: 3}
   SalaFinal:
