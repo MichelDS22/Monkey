@@ -138,6 +138,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Objetos:
   - {fileID: 6817062941120284827, guid: c13f12e52d6c09148b503aef24cf5059, type: 3}
+--- !u!1 &781816647569702048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 309625288445417429}
+  - component: {fileID: 8487951584478405915}
+  m_Layer: 5
+  m_Name: Punto De Spam (28)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &309625288445417429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781816647569702048}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.5, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4367579455471559767}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8487951584478405915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781816647569702048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342f3d9123ed1c44bbd42458fc0bbf82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objetos:
+  - {fileID: 6817062941120284827, guid: 94813722f25178c47bea994f43988ae3, type: 3}
 --- !u!1 &898831296487916049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,6 +1313,10 @@ Transform:
   - {fileID: 5799304115886530127}
   - {fileID: 1286967133804059111}
   - {fileID: 7050723202716747558}
+  - {fileID: 1832439873565061381}
+  - {fileID: 309625288445417429}
+  - {fileID: 502711210580685501}
+  - {fileID: 5863424705212175860}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1585,6 +1635,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Objetos:
   - {fileID: 6817062941120284827, guid: c13f12e52d6c09148b503aef24cf5059, type: 3}
+--- !u!1 &6124840078338949312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 502711210580685501}
+  - component: {fileID: 1260219861078134694}
+  m_Layer: 5
+  m_Name: Punto De Spam (29)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &502711210580685501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6124840078338949312}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.5, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4367579455471559767}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1260219861078134694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6124840078338949312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342f3d9123ed1c44bbd42458fc0bbf82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objetos:
+  - {fileID: 6817062941120284827, guid: 94813722f25178c47bea994f43988ae3, type: 3}
 --- !u!1 &6545990398791728339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,6 +2003,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Objetos:
   - {fileID: 6817062941120284827, guid: c13f12e52d6c09148b503aef24cf5059, type: 3}
+--- !u!1 &8177805521117118928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5863424705212175860}
+  - component: {fileID: 4267904106899064346}
+  m_Layer: 5
+  m_Name: Punto De Spam (37)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5863424705212175860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8177805521117118928}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.5, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4367579455471559767}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4267904106899064346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8177805521117118928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342f3d9123ed1c44bbd42458fc0bbf82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objetos:
+  - {fileID: 6817062941120284827, guid: 94813722f25178c47bea994f43988ae3, type: 3}
 --- !u!1 &8702937885028730605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,3 +2141,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Objetos:
   - {fileID: 5884880033647386389, guid: b46b92bffdb1c164c8ca53eec7eade6c, type: 3}
+--- !u!1 &9159997586220662888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1832439873565061381}
+  - component: {fileID: 3550617382839343346}
+  m_Layer: 5
+  m_Name: Punto De Spam (25)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1832439873565061381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9159997586220662888}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.5, y: -1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4367579455471559767}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3550617382839343346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9159997586220662888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342f3d9123ed1c44bbd42458fc0bbf82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objetos:
+  - {fileID: 6817062941120284827, guid: 94813722f25178c47bea994f43988ae3, type: 3}
