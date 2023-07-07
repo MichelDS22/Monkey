@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public float longIdleTime = 5f;
     public float speed = 3.5f;
     public float jumpForce = 3.5f;
 
@@ -15,10 +16,18 @@ public class Player : MonoBehaviour
     private Rigidbody2D _rigibody;
     private Animator _animator;
 
+    //LongIdle
+    private float _longIdleTimer;
+
     //Vectores de movimiento
     private Vector2 _movement;
     private bool _facingRigth = true;
     private bool _isGrounded; // estoy en el suelo si o no
+
+    //Ataque
+    private bool _isAttacking;
+
+
 
     private void Awake()
     {
@@ -29,19 +38,22 @@ public class Player : MonoBehaviour
     {
         
     }
-    void Update()
+    void Update() //Aquí checamos los comandos durante cada ciclo, para ver si el jugador decide moverse o hacer algo
     {
-        //Movement
-        float horizontalInput = Input.GetAxisRaw("Horizontal"); //Raw para dar el valor final
-        _movement = new Vector2(horizontalInput, 0f);
-        //Flipping
-        if (horizontalInput < 0f && _facingRigth == true)
+        if (_isAttacking == false)
         {
-            Flip();
-        }
-        else if (horizontalInput > 0f && _facingRigth == false)
-        {
-            Flip();
+            //Movement
+            float horizontalInput = Input.GetAxisRaw("Horizontal"); //Raw para dar el valor final
+            _movement = new Vector2(horizontalInput, 0f);
+            //Flipping
+            if (horizontalInput < 0f && _facingRigth == true)
+            {
+                Flip();
+            }
+            else if (horizontalInput > 0f && _facingRigth == false)
+            {
+                Flip();
+            }
         }
 
         //Checa el piso
@@ -53,20 +65,58 @@ public class Player : MonoBehaviour
         {
             _rigibody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
+
+        //Checa si Ataca
+        if (Input.GetButtonDown("Fire1") && _isGrounded == true && _isAttacking == false)
+        {
+            _movement = Vector2.zero;
+            _rigibody.velocity = Vector2.zero;
+            _animator.SetTrigger("Attack");
+        }
     }
-    private void FixedUpdate()
+    private void FixedUpdate() //después del input del jugador, aquí le decimos que se mueva el componente del rigibody
     {
-        float horizontalVelocity = _movement.normalized.x * speed;
-        _rigibody.velocity = new Vector2(horizontalVelocity, _rigibody.velocity.y);
-    }
-    private void LateUpdate()
-    {
-        //    _animator.SetBool("Idle", _movement == Vector2.zero);
-        //    _animator.SetBool("IsGrounded", _isGrounded);
-       // _animator.SetFloat("VerticalVelocity", _rigidbody.velocity.y);
+        if (_isAttacking == false)
+        {
+            float horizontalVelocity = _movement.normalized.x * speed;
+            _rigibody.velocity = new Vector2(horizontalVelocity, _rigibody.velocity.y);
+        }
     }
 
-    private void Flip()
+    private void LateUpdate() //una vez que terminamos de mover, aquí cambiamos las animaciones correspondientes
+    {
+         _animator.SetBool("Idle", _movement == Vector2.zero);
+        _animator.SetBool("IsGrounded", _isGrounded);
+        //_animator.SetFloat("VerticalVelocity", _rigibody.velocity.y);
+
+        //Animator
+        if (_animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack")) //de la layer del amimator 
+        {
+            _isAttacking = true;
+        }
+        else
+        {
+            _isAttacking = false;
+        }
+        //Long Idle
+        if (_animator.GetCurrentAnimatorStateInfo(0).IsTag("Idle"))
+        {
+            _longIdleTimer += Time.deltaTime;
+            if (_longIdleTimer >= longIdleTime)
+            {
+                _animator.SetTrigger("LongIdle");
+            }
+            else 
+            {
+                _longIdleTimer = 0f;
+            }
+        }
+    }
+
+
+
+
+    private void Flip() //para que el sprite voltee hacia la dirección que estoy moviendo
     {
         _facingRigth = !_facingRigth; // si es falso voltea el valor a verdadero y viceverza
         float localSclaeX = transform.localScale.x;
