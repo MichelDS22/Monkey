@@ -7,8 +7,12 @@ public class LoadScene : MonoBehaviour
 {
 	public string scene;
 
-	private void OnMouseDown()
+	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		SceneManager.LoadScene(scene);
+		if (collision.CompareTag("Player")) 
+		{
+			Debug.Log("Colisono con caja");
+            SceneManager.LoadScene(scene);
+        }
 	}
 }
