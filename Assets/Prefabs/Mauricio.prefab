@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8791854819725496105}
   m_Layer: 0
   m_Name: Mauricio
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,7 +35,7 @@ Transform:
   m_Children:
   - {fileID: 8791854821469535548}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8791854819725496101
 MonoBehaviour:
@@ -125,7 +125,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1.15
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6ad1fe0033370314fb6caa9dcd12bd73, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 1
