@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 4038116471588048642}
+  m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 5
@@ -390,6 +390,7 @@ Transform:
   - {fileID: 4038116472398183619}
   - {fileID: 4038116470876100292}
   - {fileID: 4038116470862872562}
+<<<<<<< HEAD
   - {fileID: 4038116471588048642}
   - {fileID: 4972052587888929400}
   m_Father: {fileID: 0}
@@ -515,3 +516,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4276803482513065130, guid: 31383eff26e857a449842f282cb40769, type: 3}
   m_PrefabInstance: {fileID: 238699107819755395}
   m_PrefabAsset: {fileID: 0}
+=======
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> 58356a965fcf13d614f37bff33c5ed38c5de8cd8
