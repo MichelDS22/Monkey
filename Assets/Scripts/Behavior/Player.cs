@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public Transform OriginPoint;
     public float longIdleTime = 5f;
     public float speed = 3.5f;
     public float jumpForce = 3.5f;
@@ -36,7 +37,7 @@ public class Player : MonoBehaviour
     }
     void Start()
     {
-        
+        gameObject.transform.position = new Vector2(OriginPoint.transform.position.x, OriginPoint.transform.position.y);
     }
     void Update() //Aquí checamos los comandos durante cada ciclo, para ver si el jugador decide moverse o hacer algo
     {
@@ -61,7 +62,7 @@ public class Player : MonoBehaviour
         // el overlap sirve para checar con la layer, como el piso está en una layer y el jugador en otra, si se tocan, aquí se hará verdadero
 
         //Checa el salto
-        if (Input.GetButtonDown("Jump") && _isGrounded == true)
+        if (Input.GetButtonDown("Jump") && _isGrounded == true && _isAttacking == false)
         {
             _rigibody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
@@ -85,9 +86,9 @@ public class Player : MonoBehaviour
 
     private void LateUpdate() //una vez que terminamos de mover, aquí cambiamos las animaciones correspondientes
     {
-         _animator.SetBool("Idle", _movement == Vector2.zero);
+        _animator.SetBool("Idle", _movement == Vector2.zero);
         _animator.SetBool("IsGrounded", _isGrounded);
-        //_animator.SetFloat("VerticalVelocity", _rigibody.velocity.y);
+        _animator.SetFloat("VerticalVelocity", _rigibody.velocity.y);
 
         //Animator
         if (_animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack")) //de la layer del amimator 
@@ -98,18 +99,19 @@ public class Player : MonoBehaviour
         {
             _isAttacking = false;
         }
-        //Long Idle
+        // Long Idle
         if (_animator.GetCurrentAnimatorStateInfo(0).IsTag("Idle"))
         {
             _longIdleTimer += Time.deltaTime;
+
             if (_longIdleTimer >= longIdleTime)
             {
                 _animator.SetTrigger("LongIdle");
             }
-            else 
-            {
-                _longIdleTimer = 0f;
-            }
+        }
+        else
+        {
+            _longIdleTimer = 0f; 
         }
     }
 
