@@ -9,10 +9,10 @@ public class LoadScene : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.CompareTag("Player")) 
+		if (collision.CompareTag("Player"))
 		{
 			Debug.Log("Colisono con caja");
-            SceneManager.LoadScene(scene);
+			SceneManager.LoadScene("Scene1");
         }
 	}
 }
