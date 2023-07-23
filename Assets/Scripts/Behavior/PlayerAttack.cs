@@ -23,7 +23,7 @@ public class PlayerAttack : MonoBehaviour
         _isAttacking = false;
         }
     }
-    /*
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
@@ -32,9 +32,8 @@ public class PlayerAttack : MonoBehaviour
             if (collision.CompareTag("Enemy") || collision.CompareTag("Big Bullet"))
             {
             collision.SendMessageUpwards("AddDamage");
-        }
+            }
 
-    }  
+        }  
     }
-    */
 }

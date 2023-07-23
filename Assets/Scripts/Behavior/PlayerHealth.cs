@@ -83,5 +83,5 @@ public class PlayerHealth : MonoBehaviour
         hearthUI.sizeDelta = new Vector2(hearthSize * health, hearthSize);
         _controller.transform.position = new Vector2(OriginPoint.transform.position.x, OriginPoint.transform.position.y);
         
-        }
+    }
 }

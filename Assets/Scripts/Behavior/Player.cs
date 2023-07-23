@@ -115,9 +115,6 @@ public class Player : MonoBehaviour
         }
     }
 
-
-
-
     private void Flip() //para que el sprite voltee hacia la dirección que estoy moviendo
     {
         _facingRigth = !_facingRigth; // si es falso voltea el valor a verdadero y viceverza

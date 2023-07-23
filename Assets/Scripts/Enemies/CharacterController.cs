@@ -38,11 +38,6 @@ public class CharacterController : MonoBehaviour
             }
         }
     }
-
-    private void LateUpdate()
-    {
-        Debug.Log("Tiempo transcurrido: " + fireAnimationTimer);
-    }
 }
 
 

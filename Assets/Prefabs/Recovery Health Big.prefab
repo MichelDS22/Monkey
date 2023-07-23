@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 104368}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 32.12, y: 9.96, z: 0.000964}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 416846}
@@ -138,8 +138,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthRestoration: 1
-  lightingParticles: {fileID: 0}
-  burstParticles: {fileID: 0}
+  lightingParticles: {fileID: 166172}
+  burstParticles: {fileID: 6414774508388345245}
 --- !u!1 &166172
 GameObject:
   m_ObjectHideFlags: 0

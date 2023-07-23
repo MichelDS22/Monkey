@@ -106,7 +106,7 @@ public class EnemyPatrol : MonoBehaviour
 	void CanShoot()
 	{
 		if (_weapon != null) {
-			_weapon.Shoot();
+			//_weapon.Shoot();
 		}
 	}
     private void OnEnable()
