@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4023116132255517944}
   - component: {fileID: 4023116132255517945}
   - component: {fileID: 4023116132255517942}
+  - component: {fileID: 5296896808904061133}
   m_Layer: 8
   m_Name: Phantom
   m_TagString: Enemy
@@ -40,7 +41,7 @@ Transform:
   - {fileID: 4023116133940144297}
   - {fileID: 4023116132346906738}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4023116132255517941
 SpriteRenderer:
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 706050100, guid: a557a160ef657f846a5a6f7304f32f78, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -197,6 +198,40 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5296896808904061133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4023116132255517943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 1
+  m_ApplyToSortingLayers: 2d73b98d000000000f403bbc
+  m_ShapePath:
+  - {x: -0.12124252, y: -0.3943177, z: 0}
+  - {x: -0.01365757, y: -0.23315583, z: 0}
+  - {x: 0.022518158, y: 0.17201775, z: 0}
+  - {x: 0.25013924, y: 0.645547, z: 0}
+  - {x: 0.39431763, y: 0.6018552, z: 0}
+  - {x: 0.4204564, y: 0.43248647, z: 0}
+  - {x: 0.22510481, y: 0.15754724, z: 0}
+  - {x: 0.30469275, y: -0.21506773, z: 0}
+  - {x: 0.14308834, y: -0.48170167, z: 0}
+  - {x: -0.020893097, y: -0.7070642, z: 0}
+  - {x: -0.31753826, y: -0.54427123, z: 0}
+  m_ShapePathHash: -1631862109
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 54976
 --- !u!1 &4023116132346906739
 GameObject:
   m_ObjectHideFlags: 0

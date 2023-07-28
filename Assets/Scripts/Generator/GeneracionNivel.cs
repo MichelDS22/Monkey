@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -214,12 +213,7 @@ public class GeneracionNivel : MonoBehaviour
                     {
                         DetectorHabitacion.GetComponent<DestruirSalas>().DestruirSala();
 
-                        int RandomHabitacionAbajo = Random.Range(1, 3);
-                        if (RandomHabitacionAbajo == 2)
-                        {
-                            RandomHabitacionAbajo = 1;
-                        }
-                        SelectorDeSalas(RandomHabitacionAbajo);
+                        SelectorDeSalas(1);
                     }
                 }
 
