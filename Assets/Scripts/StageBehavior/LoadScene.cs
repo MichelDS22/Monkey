@@ -6,6 +6,8 @@ using TMPro;
 
 public class LoadScene : MonoBehaviour
 {
+
+
     public string scene;
     // public GameObject instructionsText; // Referencia al objeto UI de texto
 
@@ -19,8 +21,8 @@ public class LoadScene : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            // Cargar la escena definida en la variable "scene"
             SceneManager.LoadScene(scene);
+            // Cargar la escena definida en la variable "scene"
 
             // Desactivar el objeto UI de texto cuando se cambia de escena
             //instructionsText.SetActive(false);
