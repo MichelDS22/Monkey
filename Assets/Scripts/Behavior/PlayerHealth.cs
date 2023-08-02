@@ -34,24 +34,24 @@ public class PlayerHealth : MonoBehaviour
         health = totalHealth;
     }
     public void AddDamage(int amount)
-    { 
-    health -= amount;
+    {
+        health -= amount;
 
         //Visual
         StartCoroutine("VisualFeedback");
         //Game Over
         if (health <= 0)
-            {
-                health = 0;
+        {
+            health = 0;
             gameObject.SetActive(false);
-                DisableEnemies();
+            DisableEnemies();
         }
         hearthUI.sizeDelta = new Vector2(hearthSize * health, hearthSize);
         Debug.Log("Player got damaged. His current health is " + health);
     }
     public void AddHealth(int amount)
-    { 
-    health += amount;
+    {
+        health += amount;
 
         //Max
         if (health > totalHealth)
@@ -68,10 +68,6 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         _renderer.color = Color.white;
     }
-    private void OnEnable()
-    {
-        health = totalHealth;
-    }
 
     private void DisableEnemies()
     {
@@ -83,6 +79,10 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        health = totalHealth;
+    }
     private void OnDisable()
     {
         gameOverMenu.gameObject.SetActive(true);

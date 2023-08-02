@@ -2153,19 +2153,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 966347338315658072, guid: 74e01ec3e22058f45880d45596cd93da, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
-      value: -78.19667
+      value: -85.7305
       objectReference: {fileID: 0}
     - target: {fileID: 966347338315658072, guid: 74e01ec3e22058f45880d45596cd93da, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
-      value: -49.991714
+      value: -68.67561
       objectReference: {fileID: 0}
     - target: {fileID: 966347338315658072, guid: 74e01ec3e22058f45880d45596cd93da, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
-      value: 72.453285
+      value: 75.466805
       objectReference: {fileID: 0}
     - target: {fileID: 966347338315658072, guid: 74e01ec3e22058f45880d45596cd93da, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
-      value: -47.313457
+      value: -68.40817
       objectReference: {fileID: 0}
     - target: {fileID: 966347338315658072, guid: 74e01ec3e22058f45880d45596cd93da, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].x
@@ -2277,6 +2277,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 6164060674230719585}
     m_Modifications:
+    - target: {fileID: -1774980134747290110, guid: 756ce9ce938fe5f43ab24f6b9e656724, type: 3}
+      propertyPath: m_InstanceId
+      value: -634204
+      objectReference: {fileID: 0}
     - target: {fileID: 6108992086818463350, guid: 756ce9ce938fe5f43ab24f6b9e656724, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2328,10 +2332,6 @@ PrefabInstance:
     - target: {fileID: 6108992086818463353, guid: 756ce9ce938fe5f43ab24f6b9e656724, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6108992086818463356, guid: 756ce9ce938fe5f43ab24f6b9e656724, type: 3}
-      propertyPath: jumpForce
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6108992086818463356, guid: 756ce9ce938fe5f43ab24f6b9e656724, type: 3}
       propertyPath: m_Enabled

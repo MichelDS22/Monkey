@@ -7,12 +7,12 @@ using TMPro;
 public class LoadScene : MonoBehaviour
 {
     public string scene;
-   // public GameObject instructionsText; // Referencia al objeto UI de texto
+    // public GameObject instructionsText; // Referencia al objeto UI de texto
 
     private void Start()
     {
         // Desactivar el objeto UI de texto al inicio del juego
-       // instructionsText.SetActive(false);
+        // instructionsText.SetActive(false);
     }
 
     private void Update()
@@ -55,4 +55,3 @@ public class LoadScene : MonoBehaviour
         }
     }
 }
-
